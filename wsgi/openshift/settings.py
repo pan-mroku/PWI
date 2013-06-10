@@ -3,8 +3,8 @@
 import imp, os
 import djcelery
 
-
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
+CELERY_IMPORTS=('tasks',)
 
 djcelery.setup_loader()
 # a setting to determine whether we are running on OpenShift
@@ -157,7 +157,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-        'djcelery',
+    'djcelery',
+    'kombu.transport.django',
     'djkombu',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
