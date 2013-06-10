@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 # Django settings for openshift project.
 import imp, os
+import djcelery
 
+
+BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
+
+djcelery.setup_loader()
 # a setting to determine whether we are running on OpenShift
 ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
