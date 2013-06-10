@@ -37,10 +37,9 @@ def init_work(request):
 
 def delete_job(request):
     if 'job' not in request.GET:
-        return HttpResponse('No job id given.')
+        return redirect(reverse('home'))
     job_id = request.GET['job']
     job=AsyncResult(job_id)
-    global jobs
     jobs.remove(job)
     return redirect(reverse('home'))
         
