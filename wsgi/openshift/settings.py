@@ -3,6 +3,9 @@
 import imp, os
 
 # a setting to determine whether we are running on OpenShift
+import django
+from wsgi.openshift.polls.models import Poll
+
 ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
     ON_OPENSHIFT = True
@@ -179,3 +182,5 @@ LOGGING = {
         },
     }
 }
+
+django.db.contrib.admin.site.register(Poll)
