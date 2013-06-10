@@ -5,18 +5,18 @@ from models import Poll, Choice
 from django.http import HttpResponse, HttpResponseRedirect
 
 
-def index(request):
-    latest_poll_list = Poll.objects.all().order_by("-pub_date")[:5]
-    return render_to_response("polls/index.html", {"latest_poll_list": latest_poll_list})
-
-def detail(request, poll_id):
-    p = get_object_or_404(Poll, pk=poll_id)
-    return render_to_response("polls/detail.html", {"poll": p}, context_instance=RequestContext(request))
-
+# def index(request):
+#     latest_poll_list = Poll.objects.all().order_by("-pub_date")[:5]
+#     return render_to_response("polls/index.html", {"latest_poll_list": latest_poll_list})
+#
+# def detail(request, poll_id):
+#     p = get_object_or_404(Poll, pk=poll_id)
+#     return render_to_response("polls/detail.html", {"poll": p}, context_instance=RequestContext(request))
+#view i index nie maja metod poniewaz generyczne widoki z polls/urls odpowiadaja za to
 
 def results(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
-    return render_to_response("polls/results.html", {"poll": p})
+    return render_to_response("polls/results.html", {"poll": p}, context_instance=RequestContext(request))
 
 
 def vote(request, poll_id):
