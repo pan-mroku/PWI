@@ -8,6 +8,7 @@ from django.core.urlresolvers import reverse
 from django.utils import simplejson as json
 from django.conf.urls import patterns, url
 from django.shortcuts import render, get_object_or_404, redirect
+from celery.task.control import revoke
 
 jobs=[]
 
@@ -41,6 +42,7 @@ def delete_job(request):
         return redirect(reverse('home'))
     job_id = request.GET['job']
     jobs.remove(job_id)
+    revoke(job_id, terminate=True)
     return redirect(reverse('home'))
         
 
