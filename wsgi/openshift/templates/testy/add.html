@@ -1,0 +1,8 @@
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<form action="/testy/add/" method="post">
+{% csrf_token %}
+<textarea  name="text" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+<input type="submit" value="Add" />
+</form>

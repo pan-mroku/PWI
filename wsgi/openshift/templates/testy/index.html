@@ -1,0 +1,10 @@
+{% if latest_list %}
+<ul>
+{% for string in latest_list %}
+<li><a href="/testy/{{ string.id }}/">{{ string }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No strings are available.</p>
+{% endif %}
+<li><a href="/testy/add/">Add new string</a></li>

@@ -1,5 +1,8 @@
-<b>
-Yeah Django!
-<b>
 <br />
-let's <a href="/admin">admin </a>
+<br />
+<b>Wybierz cos: </b>
+<br />
+<br />
+{% for choice in choices_list %}
+<a href="{{ choice }}/">{{ choice }} </a><br />
+{% endfor %}
