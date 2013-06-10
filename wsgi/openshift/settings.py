@@ -157,6 +157,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+        'djcelery',
+    'djkombu',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
