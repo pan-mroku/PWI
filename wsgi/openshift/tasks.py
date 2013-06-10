@@ -32,15 +32,15 @@ def do_work():
 def init_work(request):
     """ A view to start a background job and redirect to the status page """
     job = do_work.delay()
-    jobs.append(job)
+    print job.id
+    jobs.append(job.id)
     return redirect(reverse('home'))
 
 def delete_job(request):
     if 'job' not in request.GET:
         return redirect(reverse('home'))
     job_id = request.GET['job']
-    job=AsyncResult(job_id)
-    jobs.remove(job)
+    jobs.remove(job_id)
     return redirect(reverse('home'))
         
 

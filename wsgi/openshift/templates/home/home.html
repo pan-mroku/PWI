@@ -5,6 +5,6 @@ Yeah Django!
 let's <a href="/admin">admin </a><br/>
 Add a <a href="/add_task">task</a>.</br>
 {% for job in jobs %}
-<a href="/task?job={{job.id}}">Poll worker status {{job.id}}</a><br/>
+<a href="/task?job={{job}}">Poll worker status {{job}}</a><br/>
 {% endfor %}
 
