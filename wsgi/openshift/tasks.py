@@ -40,6 +40,7 @@ def delete_job(request):
         return HttpResponse('No job id given.')
     job_id = request.GET['job']
     job=AsyncResult(job_id)
+    global jobs
     jobs.remove(job)
     return redirect(reverse('home'))
         
