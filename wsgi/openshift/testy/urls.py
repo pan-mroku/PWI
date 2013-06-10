@@ -11,4 +11,7 @@ model=StringTest,
 context_object_name="StringTest",
 template_name="testy/detail.html")),
 
-url(r"^add/", "testy.views.add"),)
+url(r"^add/", "testy.views.add"),
+url(r"^check/$", "testy.views.check"),
+url(r"^check/(?P<job_id>[\w\-]+)/$", "testy.views.checkjob"),
+)

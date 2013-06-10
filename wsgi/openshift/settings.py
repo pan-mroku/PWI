@@ -3,8 +3,12 @@
 import imp, os
 
 # a setting to determine whether we are running on OpenShift
+import djcelery
 
+BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
+CELERY_IMPORTS=('openshift.tasks',)
 
+djcelery.setup_loader()
 ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
     ON_OPENSHIFT = True
@@ -156,6 +160,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'djcelery',
+    'kombu.transport.django',
+    'djkombu',
     'polls',
     'testy',
 )
