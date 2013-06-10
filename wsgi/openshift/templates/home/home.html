@@ -2,4 +2,9 @@
 Yeah Django!
 <b>
 <br />
-let's <a href="/admin">admin </a>
+let's <a href="/admin">admin </a><br/>
+Add a <a href="{% url 'add_task' %}">task</a>.</br>
+{% for job in jobs %}
+<a href="/task?job={{job.id}}">Poll worker status {{job.id}}</a><br/>
+{% endfor %}
+
