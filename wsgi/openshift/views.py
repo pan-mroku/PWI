@@ -7,7 +7,7 @@ from openshift.tasks import *
 
 def home(request):
     global jobs
-    return render(request,'home/home.html',{'jobs':jobs})
+    return render(request,'home.html',{'jobs':jobs})
 
 def task(request):
     if 'job' not in request.GET:

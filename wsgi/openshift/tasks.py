@@ -42,7 +42,6 @@ def delete_job(request):
     job_id = request.GET['job']
     jobs.remove(job_id)
     return redirect(reverse('home'))
-        
 
 #@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
 #def clean_works():
