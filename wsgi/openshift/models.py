@@ -8,10 +8,10 @@ class Message(models.Model):
     message=models.CharField(max_length=200)
     timestamp=models.DateTimeField()
     
-    def __init__(self):
-        uuid=uuid4()
-        timestamp=timezone.now()
+    def Message(self):
+        self.uuid=uuid4()
+        self.timestamp=timezone.now()
 
     def __unicode__(self):
-        return self.timestamp+" "+self.user+": "+self.message
+        return str(self.timestamp)+" "+self.user+": "+self.message
 
