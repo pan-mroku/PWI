@@ -31,7 +31,7 @@ def home(request):
 def room(request):
     try:
         nickname=request.session['usrname']
-     except (KeyError):
+    except (KeyError):
         nickname="Guest"
     messages=Message.objects.all()
     try:
