@@ -9,6 +9,8 @@ urlpatterns = patterns('',
     url(r'^add_task/', 'openshift.tasks.init_work', name='add_task'),
     url(r'^task/','openshift.views.task', name='task'),
     url(r'^delete_task/','openshift.tasks.delete_job',name='delete_task'),
-
+                       
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^login', 'openshift.views.login', name='login'),
+    url(r'^add_message', 'openshift.views.add_message', name='add_message'),
 )

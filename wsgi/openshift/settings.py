@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 # Django settings for openshift project.
 import imp, os
-import djcelery
+#import djcelery
 
-BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
-CELERY_IMPORTS=('openshift.tasks',)
+#BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
+#CELERY_IMPORTS=('openshift.tasks',)
 
-djcelery.setup_loader()
+#djcelery.setup_loader()
 # a setting to determine whether we are running on OpenShift
 ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
@@ -157,11 +157,12 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'djcelery',
-    'kombu.transport.django',
-    'djkombu',
+    #'djcelery',
+    #'kombu.transport.django',
+    #'djkombu',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'openshift',
 )
 
 # A sample logging configuration. The only tangible logging
