@@ -29,7 +29,10 @@ def home(request):
         return render_to_response("chat/home.html", context_instance=RequestContext(request))
 
 def room(request):
-    nickname=request.session['usrname']
+    try:
+        nickname=request.session['usrname']
+     except (KeyError):
+        nickname="Guest"
     messages=Message.objects.all()
     try:
 

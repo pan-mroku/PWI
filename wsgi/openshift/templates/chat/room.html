@@ -18,8 +18,9 @@
 {% else %}
     <p>Nie ma zadnych wiadomosci.</p>
 {% endif %}
+                <br />        <br />        <br />
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-<b>Wyslij wiadomosc.</b>
+<b>Wyslij wiadomosc:</b>
 <form action="/chat/room/" method="post">
 {% csrf_token %}
 <textarea  name="message" rows="4" cols="50">
@@ -27,3 +28,6 @@ Treść wiadomości
 </textarea>
 <input type="submit" value="Add" />
 </form>
+        <br />        <br />
+<li><a href="/chat/">Zmien uzytkownika</a></li>
+
