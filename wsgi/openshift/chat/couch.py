@@ -1,0 +1,1 @@
+from couchdbkit.ext.django.schema import *
