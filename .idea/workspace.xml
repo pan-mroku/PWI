@@ -7,11 +7,11 @@
     </list>
     <ignored path="pwitest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370978835652" ignored="false" />
+    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370978871887" ignored="false" />
     <file path="/models.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370939508143" ignored="false" />
     <file path="/admin.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370939399711" ignored="false" />
     <file path="/a.dummy" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370898620603" ignored="false" />
-    <file path="/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370978815687" ignored="false" />
+    <file path="/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370979100411" ignored="false" />
     <file path="/detail.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370896535981" ignored="false" />
     <file path="/urls.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370942597126" ignored="false" />
     <file path="/home.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370978271576" ignored="false" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/chat/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="4" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.3746479">
+            <state line="36" column="47" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.6225352">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -718,12 +718,16 @@
       <created>1370978837608</created>
       <updated>1370978837608</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="poprawka">
+      <created>1370978914254</created>
+      <updated>1370978914254</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="25" width="1260" height="760" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -734,7 +738,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32520324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32520324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -787,7 +791,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="lokalnie wiadomosci" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawka" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -802,7 +806,6 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="test zarejestrowania aplikacji do admina" />
-    <MESSAGE value="poprawka" />
     <MESSAGE value="lepszy widok w adminie" />
     <MESSAGE value="zrobiony caly part 2 tutoriala django" />
     <MESSAGE value="part 3 wip" />
@@ -815,6 +818,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="takie tam byle co :/" />
     <MESSAGE value="lokalnie wiadomosci" />
+    <MESSAGE value="poprawka" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -934,7 +938,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/chat/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="4" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.3746479">
+        <state line="36" column="47" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.6225352">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
