@@ -8,6 +8,7 @@ import djcelery
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
 CELERY_IMPORTS=('openshift.tasks',)
 
+
 djcelery.setup_loader()
 ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
@@ -165,6 +166,8 @@ INSTALLED_APPS = (
     'djkombu',
     'polls',
     'testy',
+    'chat',
+
 )
 
 # A sample logging configuration. The only tangible logging
