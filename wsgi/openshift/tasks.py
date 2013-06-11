@@ -26,7 +26,7 @@ def check_howmanystrings(stringValue):
         numberofstrings=len(StringTest.objects.filter(value=str(stringValue)))
     except (StringTest.DoesNotExist,TypeError):
         numberofstrings=0
-    print numberofstrings
+    print 'job value = '+str(numberofstrings)
     return {'value':numberofstrings}
 
 #def poll_state(request):
@@ -42,7 +42,7 @@ def check_howmanystrings(stringValue):
 def init_stringwork(value):
     stringvalue = value
     job = check_howmanystrings.delay(stringvalue)
-    print job.id
+    print 'append new job, id= '+job.id
     jobs.append(job.id)
     return job.id
 
