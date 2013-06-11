@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d986eb58-b148-468f-b929-49245c5fcd37" name="Default" comment="" />
+    <list default="true" id="d986eb58-b148-468f-b929-49245c5fcd37" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="pwitest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370906981549" ignored="false" />
+    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370936927542" ignored="false" />
     <file path="/models.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370896321518" ignored="false" />
     <file path="/admin.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370896075925" ignored="false" />
     <file path="/a.dummy" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370898620603" ignored="false" />
@@ -12,15 +14,15 @@
     <file path="/detail.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370896535981" ignored="false" />
     <file path="/urls.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370904505879" ignored="false" />
     <file path="/home.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370893963021" ignored="false" />
-    <file path="/index.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370901007796" ignored="false" />
+    <file path="/index.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370937404679" ignored="false" />
     <file path="/results.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370894645709" ignored="false" />
     <file path="/settings.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370895636513" ignored="false" />
     <file path="/add.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370898192245" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/mrokupwi/wsgi/openshift/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370903497873" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/mrokupwi/wsgi/openshift/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370899527667" ignored="false" />
-    <file path="/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370906722644" ignored="false" />
+    <file path="/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370937772579" ignored="false" />
     <file path="/check.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370901326091" ignored="false" />
-    <file path="/checkjob.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370906013667" ignored="false" />
+    <file path="/checkjob.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370937365519" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +45,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="67" selection-start="310" selection-end="310" vertical-scroll-proportion="-6.25">
+            <state line="13" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/detail.html">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="38" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.875">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -61,10 +63,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="123" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state line="26" column="8" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,7 +72,7 @@
       <file leaf-file-name="checkjob.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/checkjob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="-0.0">
+            <state line="6" column="0" selection-start="207" selection-end="245" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -87,24 +87,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/polls/results.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="177" selection-end="224" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/polls/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,21 +96,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tasks.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tasks.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="53" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
+            <state line="28" column="10" selection-start="978" selection-end="978" vertical-scroll-proportion="0.45652175">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="setup.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="68" selection-start="321" selection-end="323" vertical-scroll-proportion="0.45081967">
+            <state line="12" column="1" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,16 +159,16 @@
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/polls/index.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/polls/views.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/urls.py" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/index.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/add.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/settings.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/testy/urls.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/check.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/detail.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/testy/views.py" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/checkjob.html" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/tasks.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/checkjob.html" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/index.html" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/tasks.py" />
       </list>
     </option>
   </component>
@@ -349,6 +349,10 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -408,12 +412,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -432,7 +436,7 @@
       <recent name="$PROJECT_DIR$/wsgi/openshift/polls" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.manage-celery">
+  <component name="RunManager" selected="Python.manage-run">
     <configuration default="false" name="manage-syncdb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -653,23 +657,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="25" width="1260" height="760" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2603306" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2644628" sideWeight="0.67479676" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32520324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -756,48 +760,19 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="102" selection-end="102" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="73" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/polls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="79" selection-start="1659" selection-end="1671" vertical-scroll-proportion="0.8092643">
-          <folding />
-        </state>
+        <state line="37" column="79" selection-start="1659" selection-end="1671" vertical-scroll-proportion="0.8092643" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/polls/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="398" selection-end="400" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="18" selection-start="398" selection-end="400" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/polls/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/polls/detail.html">
@@ -809,14 +784,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/polls/results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="177" selection-end="224" vertical-scroll-proportion="-3.75">
+        <state line="6" column="0" selection-start="177" selection-end="224" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.875">
+        <state line="3" column="38" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -828,48 +833,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="310" selection-end="310" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/testy/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="123" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state line="26" column="8" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/checkjob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+        <state line="6" column="0" selection-start="207" selection-end="245" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/templates/testy/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="53" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="68" selection-start="321" selection-end="323" vertical-scroll-proportion="0.45081967">
+        <state line="28" column="10" selection-start="978" selection-end="978" vertical-scroll-proportion="0.45652175">
           <folding />
         </state>
       </provider>
