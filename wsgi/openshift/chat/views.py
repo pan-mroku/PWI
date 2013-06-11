@@ -33,9 +33,7 @@ def room(request):
         nickname=request.session['usrname']
     except (KeyError):
         nickname="Guest"
-        if len(User.objects.filter(nickname=nickname)) == 0:
-            user = User(nickname=nickname, ip="", create_date=datetime.now())
-            user.save()
+
     messages=Message.objects.all()
     try:
 
