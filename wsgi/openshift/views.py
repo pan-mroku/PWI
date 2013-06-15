@@ -31,7 +31,6 @@ def login(request):
 def add_message(request):
     user=request.user
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
-    print message
     message.save()
     return redirect(reverse('home'))
                     
