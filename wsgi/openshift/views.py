@@ -6,11 +6,14 @@ from django.core.urlresolvers import reverse
 #from openshift.tasks import *
 from openshift.models import *
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 def home(request):
     lines=Message.objects.all().order_by('-timestamp')
-    user=request.session.get('user')
-    return render(request,'home.html',{'lines':lines,'user':user})
+    return render(request,'home.html',{'lines':lines,})
+
+def home_redirect(request):
+    return redirect(reverse('home'))
 
 def task(request):
     if 'job' not in request.GET:
@@ -24,8 +27,9 @@ def login(request):
     request.session['user']=request.POST['login']
     return redirect(reverse('home'))
 
+@login_required
 def add_message(request):
-    user=request.session.get('user')
+    user=request.user
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     print message
     message.save()
