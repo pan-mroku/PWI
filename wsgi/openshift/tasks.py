@@ -12,6 +12,7 @@ from couchdb_methods import get_chatData
 from settings import HOST_NAME
 import requests
 from models import Message
+from django.views.decorators.csrf import csrf_exempt
 
 jobs=[]
 
@@ -68,11 +69,16 @@ def send_message(message):
     return {'current':100}
 
 
-@task
+@csrf_exempt
 def get_message(request):
-    print request.GET
-    message Message(request.GET)#dac tu json data
-    return
+    create_and_save_message.delay(request.POST)
+    return HttpResponse()
+
+@task
+def create_and_save_message(json):
+    message=Message()
+    message.json_decode(json)
+    message.save()
 
 #@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
 #def clean_works():
