@@ -42,7 +42,7 @@ def login(request):
 
 @login_required
 def add_message(request):
-    user=request.user.username
+    user=str(request.user.username)
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
     send_message.delay(message.json_encode())
