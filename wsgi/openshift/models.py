@@ -1,4 +1,4 @@
-from couchdb import json
+from django.core import serializers
 from django.db import models
 from uuid import uuid4
 from django.utils import timezone
@@ -15,10 +15,10 @@ class Message(models.Model):
         self.timestamp=timezone.now()
 
     def Message(self, jsondata):
-        self=json.decode(jsondata)
+        self=serializers.deserialize('json', jsondata)
 
     def json_encode(self):
-        return json.encode(self)
+        return serializers.serialize('json', self)
 
     def __unicode__(self):
         str(self.timestamp)+" "+str(self.user)+": "+self.message
