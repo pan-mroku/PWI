@@ -9,7 +9,7 @@ from django.core.urlresolvers import reverse
 from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from wsgi.openshift.couchdb_methods import *
+from openshift.couchdb_methods import *
 
 
 def home(request):
