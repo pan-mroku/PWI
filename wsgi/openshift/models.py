@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 class Message(models.Model):
     uuid=models.CharField(max_length=50)
-    user=models.ForeignKey(User)
+    user=models.CharField(max_length=20)
     message=models.CharField(max_length=200)
     timestamp=models.DateTimeField()
     
@@ -15,11 +15,19 @@ class Message(models.Model):
         self.timestamp=timezone.now()
 
     def Message(self, jsondata):
-        self=serializers.deserialize('json', jsondata)
+        self.uuid=jsondata['uuid']
+        self.message=jsondata['message']
+        self.user=jsondata['user']
+        self.timestamp=jsondata['timestamp']
 
     def json_encode(self):
-        return serializers.serialize('json', self)
+        dict={}
+        dict['uuid']=self.uuid
+        dict['user']=self.user
+        dict['message']=self.message
+        dict['timestamp']=self.timestamp
+        return dict
 
     def __unicode__(self):
         str(self.timestamp)+" "+str(self.user)+": "+self.message
-
+    

@@ -10,7 +10,7 @@ from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from couchdb_methods import *
-from wsgi.openshift.tasks import send_message
+from tasks import send_message
 
 
 def home(request):
@@ -42,7 +42,7 @@ def login(request):
 
 @login_required
 def add_message(request):
-    user=request.user
+    user=request.user.username
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
     send_message(message.json_encode())
