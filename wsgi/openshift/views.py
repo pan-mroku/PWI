@@ -1,10 +1,12 @@
 import os
+from celery.result import AsyncResult
+from couchdb import Server
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.urlresolvers import reverse
 #from openshift.tasks import *
-from openshift.models import *
+from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
@@ -33,4 +35,15 @@ def add_message(request):
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
     return redirect(reverse('home'))
-                    
+
+#dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.
+#by sprawdzic main bazy danych, czyli same dokumenty, zrobic iteracje po SERVER (bez arg)
+#wydajna iteracja, na viewsach
+def couchdb_browser(request):
+    SERVER = Server('http://194.29.175.241:5984/')
+    chat= SERVER['chat'].view('utils/list_active') #wydajna iteracja, na viewsach - warunek, musi byc view w couchdb juz dodany (to jest ten od mikusia) Jak we wtorek nie bedzie dostepnego widoku, to trzeba go poprosic by zrobil.
+    docs=[]
+    for key in chat:
+        if 'value' in key:
+            docs.append(key['value'])
+    return render(request, 'couchdb_browser.html',{'docs':docs, 'chat':True}) #jezeli przegladam sobie dokument chat to true

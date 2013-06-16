@@ -19,4 +19,7 @@ urlpatterns = patterns(
     url(r'^login/', 'django.contrib.auth.views.login', name='login'),
     url(r'^logout/', 'django.contrib.auth.views.logout', {'next_page':'/'}, name='logout'),
     url(r'^users/','openshift.views.home_redirect'),
+    #Test CouchDB - pokazuje dane z CDB
+    url(r'^couchdb_browser/','openshift.views.couchdb_browser'),
+
 )
