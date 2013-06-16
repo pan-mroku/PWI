@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d986eb58-b148-468f-b929-49245c5fcd37" name="Default" comment="przeniesione ze wspolnej pracy nad https://github.com/pan-mroku/PWI">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+    <list default="true" id="d986eb58-b148-468f-b929-49245c5fcd37" name="Default" comment="poprawka">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/openshift/sqlite3.db" afterPath="$PROJECT_DIR$/wsgi/openshift/sqlite3.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pwitest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417539719" ignored="false" />
+    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371418728044" ignored="false" />
     <file path="/models.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370939508143" ignored="false" />
     <file path="/admin.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370939399711" ignored="false" />
     <file path="/a.dummy" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370898620603" ignored="false" />
-    <file path="/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371416061875" ignored="false" />
+    <file path="/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371418553350" ignored="false" />
     <file path="/detail.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370896535981" ignored="false" />
     <file path="/urls.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417397934" ignored="false" />
     <file path="/home.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370978271576" ignored="false" />
@@ -20,7 +21,7 @@
     <file path="/add.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370898192245" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/mrokupwi/wsgi/openshift/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370903497873" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/mrokupwi/wsgi/openshift/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370899527667" ignored="false" />
-    <file path="/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371416783368" ignored="false" />
+    <file path="/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371418466339" ignored="false" />
     <file path="/check.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370901326091" ignored="false" />
     <file path="/checkjob.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370937365519" ignored="false" />
     <file path="/room.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370979298932" ignored="false" />
@@ -30,8 +31,8 @@
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/settings.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371413888142" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371413888143" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/models.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371413888143" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417539427" ignored="false" />
     <file path="/setup.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417531281" ignored="false" />
+    <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/setup.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417964321" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0">
+            <state line="33" column="105" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -82,19 +83,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="setup.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="108" selection-start="357" selection-end="357" vertical-scroll-proportion="0.42307693">
+            <state line="11" column="108" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+            <state line="7" column="18" selection-start="237" selection-end="264" vertical-scroll-proportion="0.2387268">
               <folding />
             </state>
           </provider>
@@ -148,11 +149,11 @@
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/chat/home.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/chat/views.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/chat/room.html" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/views.py" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/tasks.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/urls.py" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/settings.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/tasks.py" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/views.py" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/settings.py" />
       </list>
     </option>
   </component>
@@ -514,7 +515,15 @@
       <created>1371416845331</created>
       <updated>1371416845331</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="poprawka">
+      <created>1371417690133</created>
+      <updated>1371417690133</updated>
+    </task>
+    <task id="LOCAL-00022" summary="poprawka w parsowaniu timedate, dodane rejestracje couchdb przy wysylaniu wiadomosci (przerzucic do wsgi)">
+      <created>1371418640292</created>
+      <updated>1371418640292</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -530,7 +539,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32357723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32357723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -583,7 +592,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="przeniesione ze wspolnej pracy nad https://github.com/pan-mroku/PWI" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawka w parsowaniu timedate, dodane rejestracje couchdb przy wysylaniu wiadomosci (przerzucic do wsgi)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -610,8 +619,9 @@
     <MESSAGE value="test" />
     <MESSAGE value="takie tam byle co :/" />
     <MESSAGE value="lokalnie wiadomosci" />
-    <MESSAGE value="poprawka" />
     <MESSAGE value="przeniesione ze wspolnej pracy nad https://github.com/pan-mroku/PWI" />
+    <MESSAGE value="poprawka" />
+    <MESSAGE value="poprawka w parsowaniu timedate, dodane rejestracje couchdb przy wysylaniu wiadomosci (przerzucic do wsgi)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -705,12 +715,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/views.py">
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state line="13" column="4" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="108" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -723,23 +738,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="33" column="105" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="108" selection-start="357" selection-end="357" vertical-scroll-proportion="0.42307693">
+        <state line="7" column="18" selection-start="237" selection-end="264" vertical-scroll-proportion="0.2387268">
           <folding />
         </state>
       </provider>
