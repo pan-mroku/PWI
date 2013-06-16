@@ -17,7 +17,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 jobs=[]
 
-@task()
+@task
 def do_work():
     for i in range(100):
         sleep(0.1)
