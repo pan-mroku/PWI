@@ -30,8 +30,8 @@
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/settings.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371413888142" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371413888143" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/models.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371413888143" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371416946704" ignored="false" />
-    <file path="/setup.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371416942666" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417066720" ignored="false" />
+    <file path="/setup.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417066485" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <file leaf-file-name="setup.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="30" selection-start="129" selection-end="129" vertical-scroll-proportion="0.26923078">
+            <state line="8" column="21" selection-start="153" selection-end="153" vertical-scroll-proportion="0.30769232">
               <folding />
             </state>
           </provider>
@@ -730,7 +730,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="129" selection-end="129" vertical-scroll-proportion="0.26923078">
+        <state line="8" column="21" selection-start="153" selection-end="153" vertical-scroll-proportion="0.30769232">
           <folding />
         </state>
       </provider>
