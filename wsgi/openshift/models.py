@@ -10,9 +10,11 @@ class Message(models.Model):
     message=models.CharField(max_length=200)
     timestamp=models.DateTimeField()
     
-#    def Message(self):
-#        self.uuid=uuid4()
-#        self.timestamp=timezone.now()
+    def Message(self, jsondata=None):
+        self.uuid=uuid4()
+        self.timestamp=timezone.now()
+        if jsondata:
+            self.json_decode(jsondata)
 
     def json_decode(self, jsondata):
         self.uuid=jsondata['uuid']

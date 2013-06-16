@@ -5,6 +5,7 @@ import djcelery
 
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
 CELERY_IMPORTS=('openshift.tasks',)
+HOST_NAME="http://pwitest-smoke11.rhcloud.com/"
 
 djcelery.setup_loader()
 # a setting to determine whether we are running on OpenShift

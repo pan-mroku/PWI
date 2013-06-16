@@ -9,7 +9,9 @@ from django.utils import simplejson as json
 from django.conf.urls import patterns, url
 from django.shortcuts import render, get_object_or_404, redirect
 from couchdb_methods import get_chatData
+from settings import HOST_NAME
 import requests
+from models import Message
 
 jobs=[]
 
@@ -53,7 +55,9 @@ def send_message(message):
     chatdata=get_chatData(True)
     urilist=[]
     for user in chatdata:
-        urilist.append(user['host']+user['delivery'])
+        if user['host'][0:4] == "http" and user['delivery'][0:4] != "http":
+            if HOST_NAME != user['host']: #ignorujemy swoj hostname, by sie wiadomosci nie zdublowaly
+                urilist.append(user['host']+user['delivery'])
     length = len(urilist)
     i=0
     if length>0:
@@ -67,7 +71,8 @@ def send_message(message):
 @task
 def get_message(request):
     print request.GET
-    return request.GET
+    message Message(request.GET)#dac tu json data
+    return
 
 #@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
 #def clean_works():

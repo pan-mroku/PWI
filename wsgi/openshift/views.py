@@ -6,12 +6,13 @@ from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.urlresolvers import reverse
 #from openshift.tasks import *
+import requests
 from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from couchdb_methods import *
 from tasks import send_message
-
+from settings import HOST_NAME
 
 def home(request):
     lines=Message.objects.all().order_by('-timestamp')
@@ -37,7 +38,7 @@ def login(request):
         user = chat[username]
         user['active'] = True
     else:
-        chat[username] = {'active': True, 'host': socket.gethostname(), 'delivery':"tttttttttttttttttteeest"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
+        chat[username] = {'active': True, 'host': HOST_NAME, 'delivery':"get_message/"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
     return redirect(reverse('home'))
 
 @login_required
@@ -45,7 +46,8 @@ def add_message(request):
     user=str(request.user.username)
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
-    send_message.delay(message.json_encode())
+    #send_message.delay(message.json_encode())
+    requests.post("http://127.0.0.1:8000/get_message/",message.json_encode()) #lokalnie do siebie
     return redirect(reverse('home'))
 
 #dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.
