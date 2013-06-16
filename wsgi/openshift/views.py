@@ -10,6 +10,8 @@ from django.core.urlresolvers import reverse
 from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from wsgi.openshift.couchdb_methods import get_Doc
+
 
 def home(request):
     lines=Message.objects.all().order_by('-timestamp')
@@ -48,8 +50,7 @@ def add_message(request):
 #dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.
 #by sprawdzic main bazy danych, czyli same dokumenty, zrobic iteracje po SERVER (bez arg)
 def couchdb_browser(request):
-    SERVER = Server('http://194.29.175.241:5984/')
-    chat= SERVER['chat'].view('utils/list_active') #wydajna iteracja, na viewsach - warunek, musi byc view w couchdb juz dodany (to jest ten od mikusia) Jak we wtorek nie bedzie dostepnego widoku, to trzeba go poprosic by zrobil.
+    chat= get_Doc("chat","utils/list_active")
     docs=[]
     for key in chat:
         if 'value' in key:
