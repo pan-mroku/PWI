@@ -12,7 +12,6 @@ from couchdb_methods import get_chatData
 import requests
 
 jobs=[]
-messages=[]
 
 @task()
 def do_work():
@@ -48,23 +47,13 @@ def delete_job(request):
 
 
 #metody z egzaminu - chat
-def append_message(message):
-    messages.append(message)
 
-
-@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*")) #co minute
-def send_messages_from_queue():
+@task
+def send_message(message):
     chatdata=get_chatData(True)
     urilist=[]
     for user in chatdata:
         urilist.append(user['host']+user['delivery'])
-    for message in messages:
-        send_message(message.__unicode__(),urilist)
-        messages.remove(message) #nie jestem pewien czy to usuwa czy zwraca liste bez tego elementu
-
-
-@task
-def send_message(message, urilist):
     length = len(urilist)
     i=0
     if length>0:
