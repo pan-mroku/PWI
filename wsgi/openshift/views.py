@@ -34,10 +34,8 @@ def login(request):
     if username in chat: #zakladam ze id == username, co ma sens skoro to unikalne wpisy
         user = chat[username]
         user['active'] = True
-        chat.save()
     else:
         chat[username] = {'active': True, 'host': socket.gethostname(), 'delivery':"tttttttttttttttttteeest"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
-        chat.save()
     return redirect(reverse('home'))
 
 @login_required
