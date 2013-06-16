@@ -60,6 +60,7 @@ def send_messages_from_queue():
         urilist.append(user['host']+user['delivery'])
     for message in messages:
         send_message(message.__unicode__(),urilist)
+        messages.remove(message) #nie jestem pewien czy to usuwa czy zwraca liste bez tego elementu
 
 
 @task
