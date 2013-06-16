@@ -45,7 +45,7 @@ def add_message(request):
     user=request.user.username
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
-    send_message(message.json_encode())
+    send_message.delay(message.json_encode())
     return redirect(reverse('home'))
 
 #dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.
