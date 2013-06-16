@@ -12,5 +12,7 @@
 <br/>
 
 {% for line in lines %}
-{{line}}<br/>
+    {% if not line %}
+        {{line}}<br/>
+    {% endif %}
 {% endfor %}

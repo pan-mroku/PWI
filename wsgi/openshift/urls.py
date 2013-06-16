@@ -21,6 +21,6 @@ urlpatterns = patterns(
     url(r'^users/','openshift.views.home_redirect'),
     #Test CouchDB - pokazuje dane z CDB
     url(r'^couchdb_browser/','openshift.views.couchdb_browser'),
-    url(r'^get_message','openshift.views.task',)
+
 
 )

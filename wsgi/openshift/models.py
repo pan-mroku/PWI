@@ -13,9 +13,13 @@ class Message(models.Model):
     def Message(self):
         self.uuid=uuid4()
         self.timestamp=timezone.now()
+
     def Message(self, jsondata):
         self=json.decode(jsondata)
 
+    def json_encode(self):
+        return json.encode(self)
+
     def __unicode__(self):
-        return json.encode(self)#str(self.timestamp)+" "+str(self.user)+": "+self.message
+        str(self.timestamp)+" "+str(self.user)+": "+self.message
 

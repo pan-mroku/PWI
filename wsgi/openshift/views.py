@@ -9,8 +9,8 @@ from django.core.urlresolvers import reverse
 from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from openshift.couchdb_methods import *
-
+from couchdb_methods import *
+from wsgi.openshift.tasks import send_message
 
 
 def home(request):
