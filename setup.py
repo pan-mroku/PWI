@@ -3,9 +3,9 @@
 from setuptools import setup
 
 setup(
-    name='YourAppName',
+    name='PWI EGZ',
     version='1.0',
-    description='OpenShift App',
+    description='Egzamin z PWI',
     author='Your Name',
     author_email='example@example.com',
     url='http://www.python.org/sigs/distutils-sig/',
