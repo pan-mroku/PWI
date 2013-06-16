@@ -10,7 +10,7 @@ from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from wsgi.openshift.couchdb_methods import *
-
+from tasks import append_message
 
 def home(request):
     lines=Message.objects.all().order_by('-timestamp')
@@ -44,6 +44,7 @@ def add_message(request):
     user=request.user
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
+    append_message(message)
     return redirect(reverse('home'))
 
 #dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.

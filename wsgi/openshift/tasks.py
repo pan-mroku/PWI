@@ -8,8 +8,11 @@ from django.core.urlresolvers import reverse
 from django.utils import simplejson as json
 from django.conf.urls import patterns, url
 from django.shortcuts import render, get_object_or_404, redirect
+from couchdb_methods import get_chatData
+import requests
 
 jobs=[]
+messages=[]
 
 @task()
 def do_work():
@@ -42,6 +45,39 @@ def delete_job(request):
     job_id = request.GET['job']
     jobs.remove(job_id)
     return redirect(reverse('home'))
+
+
+#metody z egzaminu - chat
+def append_message(message):
+    messages.append(message)
+
+
+@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*")) #co minute
+def send_messages_from_queue():
+    chatdata=get_chatData(True)
+    urilist=[]
+    for user in chatdata:
+        urilist.append(user['host']+user['delivery'])
+    for message in messages:
+        send_message(message.__unicode__(),urilist)
+
+
+@task
+def send_message(message, urilist):
+    length = len(urilist)
+    i=0
+    if length>0:
+        for uri in urilist:
+            requests.post(uri,message) #zakladam ze message juz jest w postaci json
+            i=i+100/length
+            current_task.update_state(state='PROGRESS', meta={'current': i})
+    return {'current':100}
+
+
+@task
+def get_message(request):
+    print request.GET
+    return request.GET
 
 #@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
 #def clean_works():
