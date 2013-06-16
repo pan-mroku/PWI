@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 # Django settings for openshift project.
 import imp, os
-
-# a setting to determine whether we are running on OpenShift
 import djcelery
 
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
 CELERY_IMPORTS=('openshift.tasks',)
-
+HOST_NAME="http://pwitest-smoke11.rhcloud.com/"
 
 djcelery.setup_loader()
+# a setting to determine whether we are running on OpenShift
 ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
     ON_OPENSHIFT = True
@@ -96,7 +95,7 @@ STATIC_URL = '/static/'
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
 # Examples: "http://foo.com/static/admin/", "/static/admin/".
-ADMIN_MEDIA_PREFIX = '/static/admin/'
+#ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -159,16 +158,15 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
     'djcelery',
     'kombu.transport.django',
     'djkombu',
-    'polls',
-    'testy',
-    'chat',
-
+    # Uncomment the next line to enable admin documentation:
+    # 'django.contrib.admindocs',
+    'openshift',
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7 
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -192,3 +190,6 @@ LOGGING = {
         },
     }
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+LOGIN_REDIRECT_URL='/'

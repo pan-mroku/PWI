@@ -1,0 +1,10 @@
+{% if form.errors %}
+<p style="color: red;">Proszę poprawić poniższe błędy</p>
+{% endif %}
+
+<form action="." method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <input type="submit" value="Dodaj" />
+</form>
