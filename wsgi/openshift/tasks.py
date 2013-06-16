@@ -3,6 +3,7 @@ from celery.decorators import periodic_task, task
 from celery import task, current_task
 from celery.result import AsyncResult
 from time import sleep
+from couchdb import Server
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.utils import simplejson as json
@@ -51,7 +52,7 @@ def delete_job(request):
 
 #metody z egzaminu - chat
 
-@task
+@task()
 def send_message(message):
     chatdata=get_chatData(True)
     urilist=[]
@@ -60,9 +61,11 @@ def send_message(message):
             if HOST_NAME != user['host']: #ignorujemy swoj hostname, by sie wiadomosci nie zdublowaly
                 urilist.append(user['host']+user['delivery'])
     length = len(urilist)
+    print "urilist length = "+str(length)
     i=0
     if length>0:
         for uri in urilist:
+            print "Sending message (["+message["timestamp"]+"] "+message['user']+": "+message['message']+") \r\n to: "+uri
             requests.post(uri,message) #zakladam ze message juz jest w postaci json
             i=i+100/length
             current_task.update_state(state='PROGRESS', meta={'current': i})
@@ -74,11 +77,23 @@ def get_message(request):
     create_and_save_message.delay(request.POST)
     return HttpResponse()
 
-@task
+@task()
 def create_and_save_message(json):
     message=Message()
     message.json_decode(json)
     message.save()
+
+@task()
+def register_to_couchdb():
+    id = HOST_NAME
+    SERVER = Server('http://194.29.175.241:5984/')
+    chat= SERVER['chat']
+    if id in chat: #zakladam ze id == username, co ma sens skoro to unikalne wpisy
+        user = chat[id]
+        user['active'] = True
+    else:
+        chat[id] = {'active': True, 'host': HOST_NAME, 'delivery':"get_message/"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
+    return redirect(reverse('home',True))
 
 #@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
 #def clean_works():

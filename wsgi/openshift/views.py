@@ -10,7 +10,7 @@ from models import *
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from couchdb_methods import *
-from tasks import send_message
+from tasks import send_message, register_to_couchdb
 from settings import HOST_NAME
 
 def home(request):
@@ -28,29 +28,20 @@ def task(request):
     data = job.result or job.state
     return render(request, 'echo.html',{'what':json.dumps(data),'job':job_id,})
 
-#def login(request):
-#    username = request.POST['login']
-#    request.session['user']= username
-#    SERVER = Server('http://194.29.175.241:5984/')
-#    chat= SERVER['chat']
-#    if username in chat: #zakladam ze id == username, co ma sens skoro to unikalne wpisy
-#        user = chat[username]
-#        user['active'] = True
-#    else:
-#        chat[username] = {'active': True, 'host': HOST_NAME, 'delivery':"get_message/"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
-#    return redirect(reverse('home'))
 
 @login_required
 def add_message(request):
+    #register_to_couchdb()
     user=str(request.user.username)
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
-    #send_message.delay(message.json_encode())
+    send_message.delay(message.json_encode())
+
     #requests.post("http://localhost:8000/get_message/",data=message.json_encode()) #lokalnie do siebie
-    return redirect(reverse('home'))
+    return redirect(('home'))
 
 #dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.
-#by sprawdzic main bazy danych, czyli same dokumenty, zrobic iteracje po SERVER (bez arg)
+#by sprawdzic main bazy danych, czyli same dokumenty, to trzeba zrobic iteracje po SERVER (bez arg)
 def couchdb_browser(request):
     return render(request, 'couchdb_browser.html',{'docs': get_chatData(True), 'chat':True}) #jezeli przegladam sobie dokument chat to true
 

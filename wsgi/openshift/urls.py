@@ -1,8 +1,8 @@
 from django.conf.urls.defaults import patterns, include, url
 
 # Uncomment the next two lines to enable the admin:
-from django.contrib import admin
-admin.autodiscover()
+#from django.contrib import admin
+#admin.autodiscover()
 
 urlpatterns = patterns(
     '',
@@ -11,7 +11,7 @@ urlpatterns = patterns(
     url(r'^task/','openshift.views.task', name='task'),
     url(r'^delete_task/','openshift.tasks.delete_job',name='delete_task'),
     
-    url(r'^admin/', include(admin.site.urls)),
+   # url(r'^admin/', include(admin.site.urls)),
     url(r'^add_message', 'openshift.views.add_message', name='add_message'),
     url(r'accounts/register/complete/', 'openshift.views.home_redirect'),
     url(r'^accounts/', include('registration.backends.simple.urls'),{'success_url':'/'}),
