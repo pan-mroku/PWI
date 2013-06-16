@@ -65,7 +65,7 @@ def send_message(message):
     i=0
     if length>0:
         for uri in urilist:
-            print "Sending message (["+message["timestamp"]+"] "+message['user']+": "+message['message']+") \r\n to: "+uri
+            print "Sending message (["+str(message["timestamp"])+"] "+message['user']+": "+message['message']+") \r\n to: "+uri
             requests.post(uri,message) #zakladam ze message juz jest w postaci json
             i=i+100/length
             current_task.update_state(state='PROGRESS', meta={'current': i})
@@ -93,7 +93,7 @@ def register_to_couchdb():
         user['active'] = True
     else:
         chat[id] = {'active': True, 'host': HOST_NAME, 'delivery':"get_message/"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
-    return redirect(reverse('home',True))
+    return
 
 #@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
 #def clean_works():
