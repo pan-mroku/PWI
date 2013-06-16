@@ -1,4 +1,5 @@
 import os
+import socket
 from celery.result import AsyncResult
 from couchdb import Server
 from django.shortcuts import render_to_response
@@ -26,7 +27,17 @@ def task(request):
     return render(request, 'echo.html',{'what':json.dumps(data),'job':job_id,})
 
 def login(request):
-    request.session['user']=request.POST['login']
+    username = request.POST['login']
+    request.session['user']= username
+    SERVER = Server('http://194.29.175.241:5984/')
+    chat= SERVER['chat']
+    if username in chat: #zakladam ze id == username, co ma sens skoro to unikalne wpisy
+        user = chat[username]
+        user['active'] = True
+        chat.save()
+    else:
+        chat[username] = {'active': True, 'host': socket.gethostname(), 'delivery':"tttttttttttttttttteeest"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
+        chat.save()
     return redirect(reverse('home'))
 
 @login_required
@@ -38,7 +49,6 @@ def add_message(request):
 
 #dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.
 #by sprawdzic main bazy danych, czyli same dokumenty, zrobic iteracje po SERVER (bez arg)
-#wydajna iteracja, na viewsach
 def couchdb_browser(request):
     SERVER = Server('http://194.29.175.241:5984/')
     chat= SERVER['chat'].view('utils/list_active') #wydajna iteracja, na viewsach - warunek, musi byc view w couchdb juz dodany (to jest ten od mikusia) Jak we wtorek nie bedzie dostepnego widoku, to trzeba go poprosic by zrobil.
@@ -47,3 +57,4 @@ def couchdb_browser(request):
         if 'value' in key:
             docs.append(key['value'])
     return render(request, 'couchdb_browser.html',{'docs':docs, 'chat':True}) #jezeli przegladam sobie dokument chat to true
+
