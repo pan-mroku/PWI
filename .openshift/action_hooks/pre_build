@@ -5,4 +5,7 @@
 # could be python, php, ruby, etc.
 
 #kill Celery daemon
-killall -q python
+for PID in `ps ax|grep celeryd|grep -v grep|cut -d' ' -f1`
+do 
+    kill -9 "$PID"
+done
