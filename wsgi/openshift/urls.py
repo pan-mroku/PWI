@@ -8,6 +8,7 @@ urlpatterns = patterns(
     '',
     url(r'^$', 'openshift.views.index', name='index'),
     url(r'^chat/', include('chat.urls')),
+    url(r'^calc/', include('calc.urls')),
     url(r'^admin/', include(admin.site.urls)),
 
     #url(r'accounts/register/complete/', 'chat.views.home_redirect'),
