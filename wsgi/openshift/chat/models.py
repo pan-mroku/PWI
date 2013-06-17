@@ -3,7 +3,6 @@ from django.db import models
 from uuid import uuid4
 from django.utils import timezone
 from django.contrib.auth.models import User
-from django.contrib import admin
 
 class Message(models.Model):
     uuid=models.CharField(max_length=50)
@@ -28,4 +27,3 @@ class Message(models.Model):
     def __unicode__(self):
         return str(self.timestamp)+" "+self.user+": "+self.message
     
-#admin.site.register(Message)
