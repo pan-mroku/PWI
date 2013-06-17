@@ -25,5 +25,5 @@ class Message(models.Model):
         return dict
 
     def __unicode__(self):
-        return str(self.timestamp)+" "+str(self.user)+": "+str(self.message)
+        return str(self.timestamp)+" "+self.user+": "+self.message
     
