@@ -7,8 +7,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.core.urlresolvers import reverse
 from django.template import RequestContext
 
-from wsgi.openshift.calc.couchdb_methods import get_calcData
-from wsgi.openshift.calc.tasks import init_work
+from couchdb_methods import get_calcData
+from tasks import init_work
 
 
 def home(request):

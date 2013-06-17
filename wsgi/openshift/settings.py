@@ -4,7 +4,7 @@ import imp, os
 import djcelery
 
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
-CELERY_IMPORTS=('openshift.calc.tasks','openshift.chat.tasks','wsgi.openshift.calc.tasks')
+CELERY_IMPORTS=('openshift.calc.tasks','openshift.chat.tasks')
 
 HOST_NAME="http://"+str(os.environ.get('OPENSHIFT_APP_DNS'))+"/"#pwi-mroku.rhcloud.com/"
 COUCHDB_HOST="http://szyszko.is-a-chef.net:80/" #proxy
