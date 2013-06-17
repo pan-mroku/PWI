@@ -13,5 +13,8 @@ try:
 except:
     pass
 
+from openshift.tasks import register_host_to_couchdb
+register_host_to_couchdb.delay()
+
 import django.core.handlers.wsgi
 application = django.core.handlers.wsgi.WSGIHandler()

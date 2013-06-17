@@ -31,7 +31,6 @@ def task(request):
 
 @login_required
 def add_message(request):
-    #register_to_couchdb() #przerzucic to do skryptu wsgi by uruchomilo sie tylko raz po wlaczeniu serwera
     user=str(request.user.username)
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
