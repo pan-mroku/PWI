@@ -5,4 +5,4 @@
 # could be python, php, ruby, etc.
 
 #kill Celery daemon
-killall python
+killall -q python
