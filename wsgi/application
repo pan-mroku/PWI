@@ -2,7 +2,6 @@
 
 import os
 import sys
-from openshift.tasks import register_to_couchdb
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'openshift.settings'
 sys.path.append(os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'wsgi', 'openshift'))
@@ -14,6 +13,7 @@ try:
 except:
     pass
 
+from openshift.tasks import register_to_couchdb
 register_to_couchdb.delay()
 
 import django.core.handlers.wsgi
