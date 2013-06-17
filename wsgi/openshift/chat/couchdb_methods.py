@@ -33,5 +33,5 @@ def register_to_couchdb():
         user = chat[id]
         user['active'] = True
     else:
-        chat[id] = {'active': True, 'host': HOST_NAME, 'delivery':"get_message/"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
+        chat[id] = {'active': True, 'host': HOST_NAME, 'delivery':"chat/get_message/"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
     return

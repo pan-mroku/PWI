@@ -4,7 +4,7 @@ import imp, os
 import djcelery
 
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
-CELERY_IMPORTS=('openshift.tasks',)
+CELERY_IMPORTS=('openshift.chat.tasks',)
 
 HOST_NAME=str(os.environ.get('OPENSHIFT_APP_DNS'))+"/"#pwi-mroku.rhcloud.com/"
 COUCHDB_HOST="http://szyszko.is-a-chef.net:80/" #proxy
@@ -59,11 +59,11 @@ else:
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Warsaw'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pl-pl'
 
 SITE_ID = 1
 
@@ -162,10 +162,10 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'djcelery',
     'kombu.transport.django',
-    'djkombu',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'openshift',
+    'chat',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7 

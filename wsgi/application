@@ -12,7 +12,7 @@ try:
 except:
     pass
 
-from openshift.tasks import register_host_to_couchdb
+from openshift.chat.tasks import register_host_to_couchdb
 register_host_to_couchdb.delay()
 
 import django.core.handlers.wsgi
