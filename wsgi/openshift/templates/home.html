@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+<body>
 {% if user.is_authenticated %}
 {{ user.username }}, <a href="/logout">Logout</a><br/>
 <form action="add_message" method="post">
@@ -15,3 +16,4 @@
 {% for line in lines %}
 {{line}}<br/>
 {% endfor %}
+</body>
