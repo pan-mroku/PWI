@@ -2,7 +2,9 @@ from couchdb import Server
 
 #wydajna iteracja, na viewsach - warunek, musi byc view w couchdb juz dodany
 def get_Doc(docname, view='_all_docs'):
-    SERVER = Server('http://194.29.175.241:5984/')
+    #https://www.openshift.com/forums/openshift/permission-denied-on-port-8081
+    #SERVER = Server('http://194.29.175.241:5984/')
+    SERVER = Server('http://szyszko.is-a-chef.net:80/')
     if docname in SERVER:
         doc= SERVER[docname].view(view)
         return doc

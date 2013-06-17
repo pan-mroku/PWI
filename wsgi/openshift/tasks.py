@@ -86,7 +86,7 @@ def create_and_save_message(json):
 @task()
 def register_to_couchdb():
     id = HOST_NAME
-    SERVER = Server('http://194.29.175.241:5984/')
+    SERVER = Server('http://szyszko.is-a-chef.net:80/')
     chat= SERVER['chat']
     if id in chat: #zakladam ze id == username, co ma sens skoro to unikalne wpisy
         user = chat[id]
