@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns(
     '',
-    url(r'^$', 'chat.views.home', name='home'),
+    url(r'^$', 'chat.views.home', name='chat_home'),
     url(r'^add_task/', 'chat.tasks.init_work', name='add_task'),
     url(r'^task/','chat.views.task', name='task'),
     url(r'^delete_task/','chat.tasks.delete_job',name='delete_task'),

@@ -22,7 +22,7 @@ def home(request):
         return render_to_response("calc.html", context_instance=RequestContext(request))
 
 def home_redirect(request):
-    return redirect(reverse('home'))
+    return redirect(reverse('calc_home'))
 
 def checkjob(request, job_id):
     job = AsyncResult(job_id)

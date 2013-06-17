@@ -18,11 +18,11 @@ def home(request):
     return render(request,'home.html',{'lines':lines,})
 
 def home_redirect(request):
-    return redirect(reverse('home'))
+    return redirect(reverse('chat_home'))
 
 def task(request):
     if 'job' not in request.GET:
-        return redirect(reverse('home'))
+        return redirect(reverse('chat_home'))
     job_id = request.GET['job']
     job = AsyncResult(job_id)
     data = job.result or job.state
@@ -37,7 +37,7 @@ def add_message(request):
     send_message.delay(message.json_encode())
 
     #requests.post("http://localhost:8000/get_message/",data=message.json_encode()) #lokalnie do siebie
-    return redirect(('home'))
+    return redirect(('chat_home'))
 
 #dla szybkiego sprawdzenia czy couchdb stoi i jak z danymi na ktorych operujemy.
 #by sprawdzic main bazy danych, czyli same dokumenty, to trzeba zrobic iteracje po SERVER (bez arg)

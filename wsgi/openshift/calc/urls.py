@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns(
     '',
-    url(r'^$', 'calc.views.home', name='home'),
+    url(r'^$', 'calc.views.home', name='calc_home'),
 
     url(r'^get_data/','calc.views.couchdb_browser'),
     #Test CouchDB - pokazuje dane z CDB
