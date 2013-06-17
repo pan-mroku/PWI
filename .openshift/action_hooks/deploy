@@ -22,3 +22,10 @@ fi
 
 echo "Executing 'python $OPENSHIFT_REPO_DIR/wsgi/openshift/manage.py collectstatic --noinput'"
 python "$OPENSHIFT_REPO_DIR"wsgi/openshift/manage.py collectstatic --noinput
+
+echo "Starting celery"
+${
+    cd "$OPENSHIFT_REPO_DIR"
+    ./manage.py celeryd -B -E -s celery >celery_log 2>&1 &
+    sleep 1
+}
