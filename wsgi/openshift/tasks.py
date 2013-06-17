@@ -9,8 +9,8 @@ from django.core.urlresolvers import reverse
 from django.utils import simplejson as json
 from django.conf.urls import patterns, url
 from django.shortcuts import render, get_object_or_404, redirect
-from couchdb_methods import get_chatData
-from settings import HOST_NAME
+from couchdb_methods import get_chatData, register_to_couchdb
+from settings import HOST_NAME, COUCHDB_HOST
 import requests
 from models import Message
 from django.views.decorators.csrf import csrf_exempt
@@ -54,6 +54,7 @@ def delete_job(request):
 
 @task()
 def send_message(message):
+    print 'task: send_message'
     chatdata=get_chatData(True)
     urilist=[]
     for user in chatdata:
@@ -65,12 +66,17 @@ def send_message(message):
     i=0
     if length>0:
         for uri in urilist:
-            print "Sending message (["+str(message["timestamp"])+"] "+message['user']+": "+message['message']+") \r\n to: "+uri
-            requests.post(uri,message) #zakladam ze message juz jest w postaci json
+            print 'task: send_message_to_server'
+            send_message_to_server.delay(message,uri) #robienie taska do wyslanie wiadomosci do jednego servera
             i=i+100/length
             current_task.update_state(state='PROGRESS', meta={'current': i})
     return {'current':100}
 
+@task()
+def send_message_to_server(message,uri): #message juz jako json
+        print "Sending message (["+str(message["timestamp"])+"] "+message['user']+": "+message['message']+") \r\n to: "+uri
+        requests.post(uri,message) #zakladam ze message juz jest w postaci json
+        return {'current':100}
 
 @csrf_exempt
 def get_message(request):
@@ -84,16 +90,8 @@ def create_and_save_message(json):
     message.save()
 
 @task()
-def register_to_couchdb():
-    id = HOST_NAME
-    SERVER = Server('http://szyszko.is-a-chef.net:80/')
-    chat= SERVER['chat']
-    if id in chat: #zakladam ze id == username, co ma sens skoro to unikalne wpisy
-        user = chat[id]
-        user['active'] = True
-    else:
-        chat[id] = {'active': True, 'host': HOST_NAME, 'delivery':"get_message/"} #Trzeba bedzie na OS sprawdzic jak sie rejestruje
-    return
+def register_host_to_couchdb():
+    register_to_couchdb()
 
 #@periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
 #def clean_works():
