@@ -1,0 +1,16 @@
+{% include "base.html" %}
+<body>
+  {% if user.is_authenticated %}
+  {{ user.username }}, <a href="/calc/logout">Logout</a><br/>
+  <form action="add_calc" method="post">
+    {% csrf_token %}
+    Obliczenie: <input type="text" name="calc" maxlength="200" value="{{ text }}"/>
+    <input type="submit" value="Send" />
+  </form>
+  {% else %}
+  <a href="/calc/accounts/register">Register</a> or <a href="/calc/login">login</a>.
+  <br/>
+  {% endif %}
+  <br/>
+
+</body>
