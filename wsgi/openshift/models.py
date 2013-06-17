@@ -12,14 +12,14 @@ class Message(models.Model):
     timestamp=models.DateTimeField()
     
     def json_decode(self, jsondata):
-        self.uuid=jsondata['uuid']
+        self.uuid=jsondata['id']
         self.message=jsondata['message']
         self.user=jsondata['user']
         self.timestamp=jsondata['timestamp']
 
     def json_encode(self):
         dict={}
-        dict['uuid']=self.uuid
+        dict['id']=self.uuid
         dict['user']=self.user
         dict['message']=self.message
         dict['timestamp']=self.timestamp
