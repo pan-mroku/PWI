@@ -59,7 +59,7 @@ def send_message(message):
     urilist=[]
     for user in chatdata:
         if user['host'][0:4] == "http" and user['delivery'][0:4] != "http":
-            if HOST_NAME != user['host'][7:]: #ignorujemy swoj hostname, by sie wiadomosci nie zdublowaly
+            if HOST_NAME != user['host']: #ignorujemy swoj hostname, by sie wiadomosci nie zdublowaly
                 urilist.append(user['host']+user['delivery'])
     length = len(urilist)
     print "urilist length = "+str(length)
