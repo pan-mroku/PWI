@@ -12,9 +12,6 @@ try:
 except:
     pass
 
-#openshift_dir=os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'wsgi', 'openshift')
-#os.system("cd "+openshift_dir+"&& ./manage.py celeryd -B -E -s celery >celery_log 2>&1 &")
-
 from openshift.chat.tasks import register_host_to_couchdb
 register_host_to_couchdb.delay()
 
