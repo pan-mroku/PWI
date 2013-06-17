@@ -12,6 +12,8 @@ try:
 except:
     pass
 
+os.system("./manage.py celeryd -B -E -s celery > celery_log 2>&1 &")
+
 from openshift.chat.tasks import register_host_to_couchdb
 register_host_to_couchdb.delay()
 
