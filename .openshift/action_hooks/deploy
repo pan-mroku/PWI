@@ -20,11 +20,12 @@ else
     python "$OPENSHIFT_REPO_DIR"wsgi/openshift/manage.py syncdb --noinput
 fi
 
+echo "Starting celery"
+cd "$OPENSHIFT_REPO_DIR"wsgi/openshift
+python manage.py celeryd -B -E -s celery -f celery_log -l INFO -v 2 &
+cd "$OLDPWD"
+
 echo "Executing 'python $OPENSHIFT_REPO_DIR/wsgi/openshift/manage.py collectstatic --noinput'"
 python "$OPENSHIFT_REPO_DIR"wsgi/openshift/manage.py collectstatic --noinput
 
-echo "Starting celery"
-cd "$OPENSHIFT_REPO_DIR"wsgi/openshift
-python manage.py celeryd -B -E -s celery -f celery_log &
-sleep 3
-cd "$OLDPWD"
+
