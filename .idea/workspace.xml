@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d986eb58-b148-468f-b929-49245c5fcd37" name="Default" comment="poprawka">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/openshift/sqlite3.db" afterPath="$PROJECT_DIR$/wsgi/openshift/sqlite3.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/openshift/celery" afterPath="$PROJECT_DIR$/wsgi/openshift/celery" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/openshift/settings.py" afterPath="$PROJECT_DIR$/wsgi/openshift/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/openshift/views.py" afterPath="$PROJECT_DIR$/wsgi/openshift/views.py" />
+    <list default="true" id="d986eb58-b148-468f-b929-49245c5fcd37" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pwitest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371467108624" ignored="false" />
+    <file path="/Dummy.txt" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371476086879" ignored="false" />
     <file path="/models.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370939508143" ignored="false" />
     <file path="/admin.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370939399711" ignored="false" />
     <file path="/a.dummy" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370898620603" ignored="false" />
-    <file path="/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371418553350" ignored="false" />
+    <file path="/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371476113696" ignored="false" />
     <file path="/detail.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370896535981" ignored="false" />
     <file path="/urls.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417397934" ignored="false" />
     <file path="/home.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370978271576" ignored="false" />
     <file path="/index.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370937404679" ignored="false" />
     <file path="/results.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370894645709" ignored="false" />
-    <file path="/settings.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371467602782" ignored="false" />
+    <file path="/settings.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371475994348" ignored="false" />
     <file path="/add.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370898192245" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/mrokupwi/wsgi/openshift/views.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370903497873" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/mrokupwi/wsgi/openshift/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370899527667" ignored="false" />
-    <file path="/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371418466339" ignored="false" />
+    <file path="/tasks.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371475853818" ignored="false" />
     <file path="/check.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370901326091" ignored="false" />
     <file path="/checkjob.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370937365519" ignored="false" />
     <file path="/room.html" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1370979298932" ignored="false" />
@@ -36,6 +32,8 @@
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/models.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371413888143" ignored="false" />
     <file path="/setup.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417531281" ignored="false" />
     <file path="$USER_HOME$/PWI_EGZ/PWI/wsgi/openshift/setup.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371417964321" ignored="false" />
+    <file path="/couchdb_methods.py" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371475557930" ignored="false" />
+    <file path="/application" changelist="d986eb58-b148-468f-b929-49245c5fcd37" time="1371475931147" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,17 +56,39 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="1" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tasks.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi/application">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="-7.2">
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi/openshift/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="64" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="56" column="21" selection-start="1686" selection-end="1686" vertical-scroll-proportion="0.33707866">
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,7 +96,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+            <state line="13" column="4" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,11 +111,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="16" selection-start="573" selection-end="573" vertical-scroll-proportion="0.6332454">
+            <state line="7" column="35" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="couchdb_methods.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi/openshift/couchdb_methods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="25" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,6 +158,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mroku_master" />
+      </map>
+    </option>
   </component>
   <component name="GitLogSettings">
     <option name="myStructureFilterPaths" />
@@ -137,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/detail.html" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/testy/views.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/checkjob.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/templates/testy/index.html" />
         <option value="$PROJECT_DIR$/wsgi/openshift/chat/models.py" />
@@ -151,8 +185,10 @@
         <option value="$PROJECT_DIR$/wsgi/openshift/urls.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/tasks.py" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/views.py" />
+        <option value="$PROJECT_DIR$/wsgi/application" />
         <option value="$PROJECT_DIR$/wsgi/openshift/settings.py" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/views.py" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/couchdb_methods.py" />
       </list>
     </option>
   </component>
@@ -188,7 +224,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -241,6 +276,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,6 +305,118 @@
       <recent name="$PROJECT_DIR$/wsgi/openshift/templates/chat" />
       <recent name="$PROJECT_DIR$/wsgi/openshift/templates/testy" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/wsgi/application</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Python.manage-run">
     <configuration default="false" name="manage-syncdb" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -522,28 +670,40 @@
       <created>1371418640292</created>
       <updated>1371418640292</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="próba z couchdb">
+      <created>1371467667951</created>
+      <updated>1371467667951</updated>
+    </task>
+    <task id="LOCAL-00024" summary="próba z couchdb">
+      <created>1371473587493</created>
+      <updated>1371473587493</updated>
+    </task>
+    <task id="LOCAL-00025" summary="couchdb rejestracja w wsgi, poprawki i porządki. proxy couchdb do mroka">
+      <created>1371476090452</created>
+      <updated>1371476090452</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="25" width="1260" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28429753" sideWeight="0.67747164" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28429753" sideWeight="0.6764228" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32252836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32357723" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32357723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -591,7 +751,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawka w parsowaniu timedate, dodane rejestracje couchdb przy wysylaniu wiadomosci (przerzucic do wsgi)" />
+    <option name="LAST_COMMIT_MESSAGE" value="couchdb rejestracja w wsgi, poprawki i porządki. proxy couchdb do mroka" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -621,35 +781,15 @@
     <MESSAGE value="przeniesione ze wspolnej pracy nad https://github.com/pan-mroku/PWI" />
     <MESSAGE value="poprawka" />
     <MESSAGE value="poprawka w parsowaniu timedate, dodane rejestracje couchdb przy wysylaniu wiadomosci (przerzucic do wsgi)" />
+    <MESSAGE value="próba z couchdb" />
+    <MESSAGE value="couchdb rejestracja w wsgi, poprawki i porządki. proxy couchdb do mroka" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/wsgi/openshift/testy/views.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/celery/app/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="327" column="0" selection-start="10680" selection-end="10680" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/wsgiref/simple_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="240" column="0" selection-start="8023" selection-end="8023" vertical-scroll-proportion="0.0" />
@@ -694,13 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="108" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
@@ -708,24 +841,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/tasks.py">
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="64" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0">
+        <state line="7" column="35" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="1" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
+        <state line="21" column="0" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="573" selection-end="573" vertical-scroll-proportion="0.6332454">
+        <state line="13" column="4" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/application">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="-7.2">
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/couchdb_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="21" selection-start="1686" selection-end="1686" vertical-scroll-proportion="0.33707866">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
