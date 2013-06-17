@@ -76,13 +76,13 @@ def send_message(message):
 def send_message_to_server(message,uri): #message juz jako json
         print "Sending message (["+str(message["timestamp"])+"] "+message['user']+": "+message['message']+") \r\n to: "+uri
         requests.post(uri,message) #zakladam ze message juz jest w postaci json
-        return {'current':100}
 
+        return {'current':100}
 @csrf_exempt
 def get_message(request):
     text="Got message."
-   # if  'user' in request.POST:
-   #     text+=request.POST['user']
+    #if  'user' in request.POST:
+    #    text+=request.POST['user']
     print text
     create_and_save_message.delay(request.POST)
     return HttpResponse()
@@ -90,7 +90,9 @@ def get_message(request):
 @task()
 def create_and_save_message(json):
     message=Message()
+    print 'Decoding message.'
     message.json_decode(json)
+    print 'Saving message: ' + message.user +": "+message.message
     message.save()
 
 @task()
