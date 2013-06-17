@@ -80,6 +80,10 @@ def send_message_to_server(message,uri): #message juz jako json
 
 @csrf_exempt
 def get_message(request):
+    text="Got message."
+   # if  'user' in request.POST:
+   #     text+=request.POST['user']
+    print text
     create_and_save_message.delay(request.POST)
     return HttpResponse()
 
