@@ -6,7 +6,7 @@
 <script>
 $(document).ready(function(){
   setInterval(function(){
-    $("#div1").load("/chat/messages");
+    $.ajax({url:("/chat")});
   },5000);
 });
 </script>
