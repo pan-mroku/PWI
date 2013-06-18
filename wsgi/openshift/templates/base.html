@@ -1,4 +1,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="refresh" content="30">
+  <!--meta http-equiv="refresh" content="30"-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  setInterval(function(){
+    $("#div1").load(Message.objects.all().order_by('timestamp'));
+  },5000);
+});
+</script>
 </head>

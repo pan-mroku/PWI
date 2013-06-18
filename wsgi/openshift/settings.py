@@ -4,7 +4,8 @@ import imp, os
 import djcelery
 
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue
-CELERY_IMPORTS=('openshift.calc.tasks','openshift.chat.tasks')
+#CELERY_IMPORTS=('openshift.calc.tasks','openshift.chat.tasks')
+CELERY_IMPORTS=('openshift.chat.tasks')
 
 HOST_NAME="http://"+str(os.environ.get('OPENSHIFT_APP_DNS'))+"/"#pwi-mroku.rhcloud.com/"
 COUCHDB_HOST="http://szyszko.is-a-chef.net:80/" #proxy
@@ -134,6 +135,11 @@ TEMPLATE_LOADERS = (
     #'django.template.loaders.eggs.Loader',
 )
 
+from django.conf import global_settings
+TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
+    'django.core.context_processors.request',
+)
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -195,4 +201,4 @@ LOGGING = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-LOGIN_REDIRECT_URL='/'
+LOGIN_REDIRECT_URL='/chat/'

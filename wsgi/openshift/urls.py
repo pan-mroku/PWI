@@ -12,9 +12,12 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls)),
 
     #url(r'accounts/register/complete/', 'chat.views.home_redirect'),
-    url(r'login/', 'django.contrib.auth.views.login'),
-    url(r'logout/', 'django.contrib.auth.views.logout',{'next_page':'/'}),
-    url(r'accounts/', include('registration.backends.simple.urls')),
+    #url(r'login/', 'django.contrib.auth.views.login'),
+    #url(r'logout/', 'django.contrib.auth.views.logout',{'next_page':'/'}),
+    #url(r'accounts/', include('registration.backends.simple.urls')),
 
-    url(r'users/','openshift.views.index_redirect'),
+    #url(r'users/','openshift.views.index_redirect'),
+
+    url(r'login/','openshift.views.login_user'),
+    url(r'logout/','openshift.views.logout_user'),
 )

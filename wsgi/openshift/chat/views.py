@@ -12,9 +12,10 @@ from django.contrib.auth.decorators import login_required
 from chat.couchdb_methods import *
 from chat.tasks import send_message, register_to_couchdb
 from settings import HOST_NAME
+from openshift.views import users
 
 def home(request):
-    lines=Message.objects.all().order_by('-timestamp')
+    lines=Message.objects.all().order_by('timestamp')
     return render(request,'home.html',{'lines':lines,})
 
 def home_redirect(request):
@@ -29,9 +30,9 @@ def task(request):
     return render(request, 'echo.html',{'what':json.dumps(data),'job':job_id,})
 
 
-@login_required
+#@login_required
 def add_message(request):
-    user=str(request.user.username)
+    user=str(request.session['user'])
     message=Message(uuid=uuid4(), user=user, message=request.POST['message'], timestamp=timezone.now())
     message.save()
     send_message.delay(message.json_encode())

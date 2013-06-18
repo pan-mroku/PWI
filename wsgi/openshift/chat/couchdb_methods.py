@@ -12,7 +12,7 @@ def get_Doc(docname, view='_all_docs'):
     return None
 
 def get_chatData(onlyActive=False):
-    chat= get_Doc("chat","utils/list_active")
+    chat= get_Doc("chat1","utils/list_active")
     docs=[]
     if onlyActive:
         for key in chat:
@@ -28,7 +28,7 @@ def get_chatData(onlyActive=False):
 def register_to_couchdb():
     id = HOST_NAME
     SERVER = Server(COUCHDB_HOST)
-    chat= SERVER['chat']
+    chat= SERVER['chat1']
     if id in chat: #zakladam ze id == username, co ma sens skoro to unikalne wpisy
         user = chat[id]
         user['active'] = True
