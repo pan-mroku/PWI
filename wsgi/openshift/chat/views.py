@@ -29,6 +29,8 @@ def task(request):
     data = job.result or job.state
     return render(request, 'echo.html',{'what':json.dumps(data),'job':job_id,})
 
+def messages(request):
+    return Message.objects.all().order_by('timestamp')
 
 #@login_required
 def add_message(request):

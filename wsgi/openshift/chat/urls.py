@@ -15,6 +15,6 @@ urlpatterns = patterns(
 
     #Test CouchDB - pokazuje dane z CDB
     url(r'^couchdb_browser/','chat.views.couchdb_browser'),
-    url(r'^get_message/','chat.tasks.get_message',)
-
+    url(r'^get_message/','chat.tasks.get_message',),
+    url(r'^messages/','chat.views.messages'),
 )

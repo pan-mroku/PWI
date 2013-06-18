@@ -6,7 +6,7 @@
 <script>
 $(document).ready(function(){
   setInterval(function(){
-    $("#div1").load(Message.objects.all().order_by('timestamp'));
+    $("#div1").load("/chat/messages");
   },5000);
 });
 </script>
